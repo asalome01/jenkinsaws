@@ -1,6 +1,6 @@
 variable "vpc_cidr" {
   description = "Choose cidr for vpc"
-  type        = "string"
+  type        = string
   default     = "10.20.0.0/16"
 }
 
@@ -42,7 +42,7 @@ variable "my_app_s3_bucket" {
 }
 
 variable "web_tags" {
-  type = "map"
+  type = map
   default = {
     Name = "Webserver"
   }
