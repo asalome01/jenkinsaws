@@ -6,13 +6,13 @@ variable "vpc_cidr" {
 
 variable "region" {
   description = "Choose region for your stack"
-  type        = "string"
+  type        = string
   default     = "us-east-1"
 }
 
 variable "web_ec2_count" {
   description = "Choose number ec2 instances for web"
-  type        = "string"
+  type        = string
   default     = "2"
 }
 
@@ -24,7 +24,7 @@ variable "nat_amis" {
   }
 }
 variable "web_amis" {
-  type = "map"
+  type = map
   default = {
     us-east-1 = "ami-0b898040803850657"
     us-east-2 = "ami-0d8f6eb4f641ef691"
@@ -33,7 +33,7 @@ variable "web_amis" {
 
 variable "web_instance_type" {
   description = "Choose instance type for your web"
-  type        = "string"
+  type        = string
   default     = "t2.micro"
 }
 
