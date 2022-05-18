@@ -10,7 +10,8 @@ pipeline{
                 sh returnStatus: true, script: 'terraform workspace new dev'                
                 sh "terraform init -reconfigure"
                 sh "terraform plan"
-                sh "terraform apply -var-file=dev.tfvars -auto-approve"
+                #sh "terraform apply -var-file=dev.tfvars -auto-approve"
+                sh "terraform destroy"
             }            
         }
     }
