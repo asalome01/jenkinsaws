@@ -9,7 +9,7 @@ pipeline{
             steps{
                 sh returnStatus: true, script: 'terraform workspace new dev'
                 sh "terraform init -reconfigure"
-                sh "terraform apply -var-file=dev.tfvars --auto-approved"
+                sh "terraform apply -var-file=dev.tfvars"
             }            
         }
     }
