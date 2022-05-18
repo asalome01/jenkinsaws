@@ -20,14 +20,14 @@ variable "nat_amis" {
   type = map
   default = {
     us-east-1 = "ami-00a9d4a05375b2763"
-    us-east-2 = "ami-00d1f8201864cc10c"
+    #us-east-2 = "ami-00d1f8201864cc10c"
   }
 }
 variable "web_amis" {
   type = map
   default = {
     us-east-1 = "ami-0b898040803850657"
-    us-east-2 = "ami-0d8f6eb4f641ef691"
+    #us-east-2 = "ami-0d8f6eb4f641ef691"
   }
 }
 
